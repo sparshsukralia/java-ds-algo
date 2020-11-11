@@ -1,11 +1,13 @@
+import java.util.Scanner;
+
 public class HelloEveryone {
 
   public static void main(String[] args) {
 
-    int i = 1;
-    for (i = 2; i < 12; i++) {
-      System.out.println(i);
-      System.out.println(i + 1);
-    }
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a new number: ");
+    int input = sc.nextInt();
+    System.out.println(input);
+    sc.close();
   }
 }
